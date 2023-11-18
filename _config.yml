@@ -20,6 +20,7 @@
 
 title: Herman's Projects
 #email: your-email@example.com
+tagline: Learn by doing
 description: >- # this means to ignore newlines until "baseurl:"
   This blog documents projects that I've been working on in my spare 
   time, including random improvements and repairs to my favorite 
@@ -29,8 +30,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  hrmnc
+linkedin_username: hrmnc
 show_excerpts: true
-categories: [Think, Rialta, General]
+categories: [Think, Rialta]
 
 
 # Build settings
