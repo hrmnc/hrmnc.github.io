@@ -3,10 +3,10 @@ layout: post
 title:  "Installing Think Diagnostics v2.2.5"
 #category: Think
 ---
-[Download Think TechCenter v2.2.5 here](https://mega.nz/file/cH1hHT7B#HrxTiXoa9IFf9mPLhMzfcEUHYqPbj9fMB9WzeEhPJuU)
+[Download Think TechCenter v2.2.5 here.](https://mega.nz/file/cH1hHT7B#HrxTiXoa9IFf9mPLhMzfcEUHYqPbj9fMB9WzeEhPJuU)<br>
 Thanks to Frank Smith for providing the software!
 
-Think TechCentre version 2.2.0 and up uses a new J2534 PassThru loader that allows any J2534-1 compliant adapter to be used. The configuration file just needs to be modified to specify which adapter to use.
+Think TechCentre version 2.2.0 and up uses a new J2534 PassThru loader that allows any J2534-1 compliant adapter to be used. The configuration file just needs to be modified to tell TechCentre what adapter to use.
 
 The J2534 adapter to be used is specified by three keys in the config file: *PassThruName*, *PassThruVersion*, and *PassThruRegistry*.
 
@@ -14,7 +14,7 @@ The J2534 adapter to be used is specified by three keys in the config file: *Pas
 
 *PassThruVersion* value can be set to "DashOne" or "DashTwo" (it doesn't matter which because TechCentre loads drivers for "DashOne" regardless).
 
-For *PassThruName* and *PassThruRegistry* values, you'll have to look up your J2534 adapter identifiers. Run regedit and search for "PassThruSupport.04.04" to find your installed J2534 adapters:
+For *PassThruName* and *PassThruRegistry* values, you'll have to look up your J2534 adapter identifiers. ***PassThruName* and *PassThruRegistry* values are case sensitive and should be copied and pasted exactly as they appear in your registry.** Run regedit and search for "PassThruSupport.04.04" to find your installed J2534 adapters:
 
 ![Registry view](/assets/reg225.jpg)
 
