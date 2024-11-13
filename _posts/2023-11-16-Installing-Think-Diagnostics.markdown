@@ -4,7 +4,7 @@ title:  "Installing Think Diagnostics v2.2.5"
 #category: Think
 tag: Think
 ---
-[Download Think TechCenter v2.2.5 here.](https://mega.nz/file/cH1hHT7B#HrxTiXoa9IFf9mPLhMzfcEUHYqPbj9fMB9WzeEhPJuU)<br>
+[Download Think TechCenter v2.2.5 here.](https://mega.nz/file/NPsz3aQQ#BJ3ItK52AV-sVfgUn5sJFJSaig7maNjSFETQw-PTnuY)<br>
 Thanks to Frank Smith for providing the software!
 
 Think TechCentre version 2.2.0 and up uses a new J2534 PassThru loader that allows any J2534-1 compliant adapter to be used. The configuration file just needs to be modified to tell TechCentre what adapter to use.
