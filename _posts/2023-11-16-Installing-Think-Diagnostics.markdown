@@ -2,6 +2,7 @@
 layout: post
 title:  "Installing Think Diagnostics v2.2.5"
 #category: Think
+tag: Think
 ---
 [Download Think TechCenter v2.2.5 here.](https://mega.nz/file/cH1hHT7B#HrxTiXoa9IFf9mPLhMzfcEUHYqPbj9fMB9WzeEhPJuU)<br>
 Thanks to Frank Smith for providing the software!
@@ -20,4 +21,10 @@ For *PassThruName* and *PassThruRegistry* values, you'll have to look up your J2
 
 The examples shown above configure TechCentre to use the [Peak PCAN-USB](https://www.peak-system.com/PCAN-USB.199.0.html) with [PassThruAPI](https://www.peak-system.com/PCAN-PassThru-API.405.0.html). This setup will read the CAN modules in the car, but not the K-line modules.
 
-For a cheaper adapter that will read ALL the modules in the car, the [GODIAG GD101](https://www.amazon.com/GODIAG-ELMConfig-ScanMaster-Automatically-Diagnosis/dp/B0BLYSD9M6) works great.
+~~For a cheaper adapter that will read ALL the modules in the car, the [GODIAG GD101](https://www.amazon.com/GODIAG-ELMConfig-ScanMaster-Automatically-Diagnosis/dp/B0BLYSD9M6) works great.~~
+
+**EDIT November 13, 2024:**
+
+I no longer recommend the GODIAG adapter. It requires periodic firmware updates to continue working and the drivers keep triggering virus alerts. I have switched to a knockoff Drewtech Mongoose Pro JLR which works great with the signed Drewtech drivers.
+
+Furthermore, the gents over on Elbilforum have [compiled a list of compatible J2534 adapters and their configuration strings.](https://elbilforum.no/index.php?msg=1151769)
