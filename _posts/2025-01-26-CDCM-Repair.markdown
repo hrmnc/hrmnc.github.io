@@ -28,10 +28,10 @@ The PIC can be programmed through the ICSP port labelled "PROG". The pinout is a
 ## Recovering Bricked CDCM Modules
 The official way to upgrade firmware on CDCM/VCU modules is using Think's *"CCP Tool"*. This Windows-based program upgrades the CDCM through the Vehicle CAN bus using reserved CAN IDs. The program starts by telling the PIC to program a flag in the highest byte of the PIC's internal EEPROM that signals the bootloader to boot into a firmware upgrade mode. This flag is cleared at the end of a successful firmware upgrade, but if the firmware upgrade process fails or is interrupted then the flag is never cleared and the PIC will be stuck in firmware upgrade mode. And since the CDCM is already in FW upgrade mode, *CCP Tool* will hang because it never gets a response from the CDCM. So it becomes necessary to open the CDCM and reprogram the PIC through the ICSP ports.
 
-Here are the program and EEPROM hex files for the CDCM rev0.9.2, the final North American release with PTC heater support:
+Here are the program and EEPROM binary files for the CDCM rev0.9.2, the final North American release with PTC heater support:
 * [**Program Flash**](/assets/CDCM/0.9.2Flash.BIN)
 * [**EEPROM**](/assets/CDCM/0.9.2EEPROM.BIN)
-
+<br>
 Both program flash and EEPROM need to be reprogrammed on bricked units to ensure that the FW upgrade flag is cleared. You can use a PICKIT3, but I had a XGecu T48 that was able to do the job.
 ![PIC Configuration](/assets/20250126-PICconfiguration.jpg)
 PIC Configuration bits
